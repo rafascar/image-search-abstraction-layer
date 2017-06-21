@@ -34,11 +34,11 @@ API Project: Image Search Abstraction Layer
 [
   {
     "term": "lolcats funny",
-    "when": "2017-06-21T17:43:27.219Z"
+    "date": "2017-06-21T17:43:27.219Z"
   },
   {
     "term": "grumpycats",
-    "when": "2017-06-21T17:43:24.895Z"
+    "date": "2017-06-21T17:43:24.895Z"
   },
   ...
 ]
