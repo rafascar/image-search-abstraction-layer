@@ -96,7 +96,7 @@ function addToHistory(term) {
     const collection = db.collection("imagesearch");
     collection.insert({
       term: term,
-      date: new Date().toString()
+      date: new Date().toISOString()
     }, function(err, doc) {
       if(err) throw err;
       db.close();
