@@ -1,0 +1,14 @@
+/* styles */
+/* called by your view template */
+
+/* You might want to try something fancier: */
+/* less: http://lesscss.org/ */
+
+body {
+  margin-top: 60px;
+}
+
+pre {
+  background-color: #F7F7F9;
+  color: #BD4147;
+}

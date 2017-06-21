@@ -1,0 +1,80 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Search Abstraction Layer</title>
+    <meta name="description" content="Image Search Abstraction Layer - freeCodeCamp API Project">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="jumbotron">
+        <h1>API Project: Image Search Abstraction Layer</h1><hr>
+        
+        <div class="mb-3">
+          <h3>User stories:</h3>
+          <blockquote class="blockquote">
+            <p class="mb-2">1. I can get the image URLs, alt text and page urls for a set of images relating to a given search string.</p>
+            <p class="mb-2">2. I can paginate through the responses by adding a ?offset=2 parameter to the URL.</p>
+            <p class="mb-0">3. I can get a list of the most recently submitted search strings.</p>
+          </blockquote>
+        </div>
+        
+        <div class="mb-3">
+          <h3>Example usage</h3>
+          <code>https://equable-summer.glitch.me/api/imagesearch/lolcats%20funny?offset=0</code><br>
+          <code>https://equable-summer.glitch.me/api/latest/imagesearch/</code>
+        </div>
+        
+        <div>
+          <h3>Example outputs</h3>
+          <pre><code>[
+  {
+    "url": "https://i.ytimg.com/vi/r_o3q7zc21Y/hqdefault.jpg",
+    "snippet": "LOLCats - Funniest cat pictures for Android - YouTube",
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtxCOQ1jMfrfEDBrBAkpR7Ifk1glwYlUgctm05hmgT1V_0LjTr3WX00tjE",
+    "context": "https://www.youtube.com/watch?v=r_o3q7zc21Y"
+  },
+  {
+    "url": "https://llwproductions.files.wordpress.com/2012/05/funny-cat-pictures-with-caption-lolcats-one-dumbazh-away.jpg",
+    "snippet": "This is Motley News' 1,000th Post! Time to Celebrate with Funnies ...",
+    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvgMU-uS_Czv-Gw7eHFYf2Ue6wMoNX00AImn8Ljk0ZHKzjG7_us5FCG6K5",
+    "context": "https://motleynews.net/2012/05/01/this-is-motley-news-1000th-post-time-to-celebrate-with-funnies/"
+  },
+  ...
+]</code></pre>
+          <pre><code>[
+  {
+    "term": "lolcats funny",
+    "when": "2017-06-21T17:43:27.219Z"
+  },
+  {
+    "term": "grumpycats",
+    "when": "2017-06-21T17:43:24.895Z"
+  },
+  ...
+]</code></pre>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+  </body>
+</html>
