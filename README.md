@@ -8,6 +8,7 @@ API Project: Image Search Abstraction Layer
 
 ### Example usage
 `https://equable-summer.glitch.me/api/imagesearch/lolcats%20funny?offset=0`
+
 `https://equable-summer.glitch.me/api/latest/imagesearch/`
 
 ### Example outputs
