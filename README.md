@@ -1,2 +1,3 @@
-# image-search-abstraction-layer
-Image Search Abstraction Layer - freeCodeCamp API Project
+Image Search Abstraction Layer
+==============================
+freeCodeCamp API Project
