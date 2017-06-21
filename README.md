@@ -7,8 +7,7 @@ API Project: Image Search Abstraction Layer
   3. I can get a list of the most recently submitted search strings.
 
 ### Example usage
-`https://equable-summer.glitch.me/api/imagesearch/lolcats%20funny?offset=0`
-
+`https://equable-summer.glitch.me/api/imagesearch/lolcats%20funny?offset=0`<br>
 `https://equable-summer.glitch.me/api/latest/imagesearch/`
 
 ### Example outputs
